@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:adjustViewBounds="true"
+    android:orientation="vertical"
+    android:scaleType="fitXY"
+    android:background="@mipmap/supercar"
+    tools:context=".Activity.MypageActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:text="내 차"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+    <LinearLayout
+        android:id="@+id/Mycarinfo"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/round_box">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Mainfunctions"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/round_box">
+
+        <ImageView
+            android:id="@+id/Mygarage"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/mygarage"
+
+            />
+
+        <ImageView
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/mycarcommunity"
+            android:background="#99e7e7e7"
+            />`
+
+        <ImageView
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/board"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Mainfunctionsinfo"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/round_box">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="내 차고"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="우리들의 차고"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="커 뮤 니 티"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+</LinearLayout>

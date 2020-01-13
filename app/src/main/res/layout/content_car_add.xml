@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/const1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/audi"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.CarAddActivity">
+
+
+    <TextView
+        android:id="@+id/Whatcar"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="어떤 차 타세요?"
+        android:textColor="#EAEAEA"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginBottom="1dp"
+        android:text="자동차 제조사"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/Carmaker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/hyundai_logo"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:src="@mipmap/hyundai_round" />
+
+            <ImageView
+                android:id="@+id/kia_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:src="@mipmap/kia_round" />
+
+            <ImageView
+                android:id="@+id/samsung_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:src="@mipmap/samsung1_round" />
+
+            <ImageView
+                android:id="@+id/ssangyong_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:src="@mipmap/ssangyong1_round" />
+
+            <ImageView
+                android:id="@+id/chevolet_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:src="@mipmap/chevolet1_round" />
+
+            <ImageView
+                android:id="@+id/benz_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:src="@mipmap/benz1_round" />
+
+            <ImageView
+                android:id="@+id/bmw_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:src="@mipmap/bmw1_round" />
+
+            <ImageView
+                android:id="@+id/audi_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:src="@mipmap/audi11_round" />
+
+            <ImageView
+                android:id="@+id/volkswagen_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:src="@mipmap/volkswagen1_round" />
+
+            <ImageView
+                android:id="@+id/volvo_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:src="@mipmap/volvo1_round" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/Carsearch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontalScrollView"
+        >
+
+        <EditText
+            android:id="@+id/CarSearch"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_border"
+            android:src="@drawable/round_box"
+            android:hint="제조사 선택 후 차량명을 검색하세요"
+            android:textColorHint="#8C8C8C" />
+
+        <ListView
+            android:id="@+id/Carlistview"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:dividerHeight="2dp"
+            android:divider="@color/white"
+            android:background="#EAEAEA">
+
+
+        </ListView>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:adjustViewBounds="true"
+    android:background="@mipmap/audi"
+    android:scaleType="fitXY"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.inrok.caring.Activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:weightSum="1" >
+
+
+        <ImageView
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:src="@mipmap/logo1_round"/>
+
+
+
+
+        <EditText
+            android:id="@+id/et_lnmobioe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="아이디"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:theme="@style/EditText" />
+
+
+        <EditText
+            android:id="@+id/et_lnpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="비밀번호"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:theme="@style/EditText" />
+
+
+        <CheckBox
+            android:id="@+id/show_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="비밀번호 보이기"
+            android:textColor="@color/yellow"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_login"
+            android:text="로  그  인"
+            android:textStyle="bold"
+            android:background="@drawable/button1"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_signup"
+            android:text="회  원  가  입"
+            android:textStyle="bold"
+            android:background="@drawable/button1"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+u
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="ver. 1.0" />
+</LinearLayout>
