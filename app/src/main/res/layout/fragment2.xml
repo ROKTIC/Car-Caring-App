@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Fragment.Fragment2"
     android:orientation="vertical">
-
+    <!-- 거리별 점검 -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
