@@ -36,12 +36,23 @@ public class CarAddActivity extends AppCompatActivity {
 
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, carArr);
         ImageView hyundai_logo = (ImageView) findViewById(R.id.hyundai_logo);
-
+        ImageView kia_logo= (ImageView) findViewById(R.id.kia_logo);
         hyundai_logo.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if (v.getId() == R.id.hyundai_logo) {
                     for (int i = 0; i < 20; i++) {
-                        carArr.add("차량 " + i);
+                        carArr.add("현대차량 " + i);
+                    }
+                    listView.setAdapter(adapter);
+                }
+            }
+        });
+
+        kia_logo.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                if (v.getId() == R.id.kia_logo) {
+                    for (int i = 0; i < 20; i++) {
+                        carArr.add("기아차량 " + i);
                     }
                     listView.setAdapter(adapter);
                 }
